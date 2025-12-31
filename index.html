@@ -11,6 +11,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
+    
+    :root {
+  --fondo-principal: #0B1013;
+  --fondo-secundario: #2F3235;
+  --texto-principal: #FFFFFF;
+  --texto-secundario: #6B6864;
+  --color-dorado: #CBBBA8;
+  --color-acento: #62A6BA;
+}
+
     :root {
       --azul: #1e88e5;
       --verde: #25d366;
@@ -25,12 +35,46 @@
     }
 
     body {
+  margin: 0;
+  background-color: var(--fondo-principal);
+  color: var(--texto-principal);
+  font-family: Arial, sans-serif;
+}
+    body {
       font-family: 'Roboto', sans-serif;
       color: var(--texto);
       line-height: 1.6;
       background-color: #fff;
     }
 
+    h1, h2 {
+  color: var(--color-dorado);
+
+    }
+    
+    section {
+  background-color: var(--fondo-secundario);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 16px;
+}
+
+    p, li {
+  color: var(--texto-secundario);
+}
+   .btn {
+  background-color: var(--color-dorado);
+  color: #0B1013;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+    .btn:hover {
+  background-color: var(--color-acento);
+  color: white;
+}
+    
     /* HERO */
     header {
       background: linear-gradient(135deg, #1e88e5, #1565c0);
@@ -198,5 +242,6 @@
 
 </body>
 </html>
+
 
 
