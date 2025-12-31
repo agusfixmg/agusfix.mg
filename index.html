@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agusfix.mg | Servicio técnico de celulares</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --azul: #1e88e5;
+      --verde: #25d366;
+      --gris: #f4f4f4;
+      --texto: #222;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: var(--texto);
+      line-height: 1.6;
+      background-color: #fff;
+    }
+
+    /* HERO */
+    header {
+      background: linear-gradient(135deg, #1e88e5, #1565c0);
+      color: #fff;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--verde);
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    /* SECCIONES */
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background-color: var(--gris);
+      padding: 25px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    /* CONTACTO */
+    .contacto {
+      background-color: var(--gris);
+      border-radius: 10px;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Agusfix.mg</h1>
+    <p>
+      Servicio técnico de reparación de celulares<br>
+      Pantallas · Baterías · Carga · Diagnóstico
+    </p>
+    <a class="btn" href="https://wa.me/549XXXXXXXXXX" target="_blank">
+      Consultá por WhatsApp
+    </a>
+  </header>
+
+  <!-- SERVICIOS -->
+  <section>
+    <h2>Servicios</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Cambio de pantalla</h3>
+        <p>Reemplazo de módulo según modelo y disponibilidad.</p>
+      </div>
+      <div class="card">
+        <h3>Cambio de batería</h3>
+        <p>Solución a problemas de descarga o apagados.</p>
+      </div>
+      <div class="card">
+        <h3>Pin de carga</h3>
+        <p>Reparación de fallas de carga y conexión.</p>
+      </div>
+      <div class="card">
+        <h3>Diagnóstico</h3>
+        <p>Revisión técnica para detectar la falla del equipo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section>
+    <h2>¿Por qué elegir Agusfix.mg?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Experiencia</h3>
+        <p>Conocimientos técnicos en reparación de celulares.</p>
+      </div>
+      <div class="card">
+        <h3>Transparencia</h3>
+        <p>Presupuesto informado luego del diagnóstico.</p>
+      </div>
+      <div class="card">
+        <h3>Atención directa</h3>
+        <p>Contacto rápido y sin intermediarios.</p>
+      </div>
+      <div class="card">
+        <h3>Repuestos</h3>
+        <p>Uso de repuestos de buena calidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section>
+    <div class="contacto">
+      <h2>Contacto</h2>
+      <p>Consultá tu reparación por WhatsApp.</p>
+      <br>
+      <a class="btn" href="https://wa.me/549XXXXXXXXXX" target="_blank">
+        Escribir ahora
+      </a>
+      <p style="margin-top:20px;">
+        Horarios y ubicación a coordinar por mensaje.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Agusfix.mg — Servicio técnico de celulares
+  </footer>
+
+</body>
+</html>
