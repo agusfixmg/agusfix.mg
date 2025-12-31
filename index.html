@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agusfix.mg | Servicio técnico especializado</title>
+  <title>Agusfix.mg | Servicio técnico</title>
 
-  <!-- Google Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -19,27 +19,31 @@
     body {
       background-color: #F2F2F2;
       color: #1E1E1E;
-      line-height: 1.6;
     }
 
+    /* HEADER */
     header {
       background: linear-gradient(135deg, #0B1013, #2F3235);
       color: white;
-      padding: 60px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
+    header img {
+      width: 110px;
+      margin-bottom: 15px;
+    }
+
     header h1 {
-      font-size: 42px;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
+      font-size: 38px;
+      margin-bottom: 8px;
     }
 
     header p {
-      font-size: 18px;
       opacity: 0.9;
     }
 
+    /* BOTÓN PRINCIPAL */
     .btn {
       display: inline-block;
       margin-top: 25px;
@@ -49,14 +53,9 @@
       text-decoration: none;
       font-weight: 700;
       border-radius: 6px;
-      transition: all 0.3s ease;
     }
 
-    .btn:hover {
-      background-color: #62A6BA;
-      color: white;
-    }
-
+    /* CONTENEDOR */
     .container {
       max-width: 1100px;
       margin: auto;
@@ -64,94 +63,126 @@
     }
 
     section {
-      background-color: white;
-      border-radius: 10px;
+      background: white;
       padding: 30px;
-      margin-bottom: 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     }
 
     section h2 {
-      margin-bottom: 15px;
-      color: #0B1013;
+      margin-bottom: 20px;
       font-size: 26px;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
+    /* SERVICIOS */
     ul li {
       margin-bottom: 10px;
     }
 
+    /* GALERÍA */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* WHATSAPP FLOTANTE */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #CBBBA8;
+      color: #0B1013;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp:hover {
+      background-color: #62A6BA;
+      color: white;
+    }
+
     footer {
-      background-color: #0B1013;
+      background: #0B1013;
       color: white;
       text-align: center;
       padding: 20px;
       font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 30px;
-      }
-
-      header p {
-        font-size: 16px;
-      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>AGUSFIX.MG</h1>
-    <p>Servicio técnico especializado en celulares</p>
-    <a class="btn" href="https://wa.me/5491122951854" target="_blank">
-      Contactar por WhatsApp
-    </a>
-  </header>
+<header>
+  <img src="logo.png" alt="Agusfix.mg">
+  <h1>AGUSFIX.MG</h1>
+  <p>Servicio técnico especializado en celulares</p>
+  <a class="btn" href="https://wa.me/5491122951854" target="_blank">
+    Consultar por WhatsApp
+  </a>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <section>
-      <h2>Servicios</h2>
-      <ul>
-        <li>Cambio de módulo y pantalla</li>
-        <li>Reparación de placa</li>
-        <li>Cambio de batería</li>
-        <li>Problemas de carga</li>
-        <li>Actualizaciones y software</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li>Cambio de módulo</li>
+      <li>Cambio de batería</li>
+      <li>Pin de carga</li>
+      <li>Reparación de software/li>
+      <li>Cuenta de google y más/li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>¿Por qué elegir Agusfix.mg?</h2>
-      <ul>
-        <li>Atención personalizada</li>
-        <li>Experiencia en reparación de celulares</li>
-        <li>Diagnóstico claro y honesto</li>
-        <li>Repuestos de calidad</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Trabajos realizados</h2>
+    <div class="galeria">
+      <img src="trabajo1.jpg" alt="Reparación 1">
+      <img src="trabajo2.jpg" alt="Reparación 2">
+      <img src="trabajo3.jpg" alt="Reparación 3">
+    </div>
+  </section>
 
-    <section>
+  <section>
+    <h2>¿Por qué elegir Agusfix.mg?</h2>
+    <ul>
+      <li>Experiencia en reparación de celulares</li>
+      <li>Transparencia y diagnóstico honesto</li>
+      <li>Repuestos de buena calidad</li>
+      <li>Atención directa sin intermediarios</li>
+    </ul>
+  </section>
+
+  <section>
       <h2>Contacto</h2>
       <p>
-        📍 Servicio técnico independiente<br>
-        📲 WhatsApp: contacto directo<br>
+        📲 WhatsApp: 1122951854<br>
         📸 Instagram: <strong>@agusfix.mg</strong>
+        📍 Vicente lopez 473 (aviso con anticipación)<br>
       </p>
     </section>
 
-  </div>
+</div>
 
-  <footer>
-    © 2025 Agusfix.mg – Servicio técnico de celulares
-  </footer>
+<footer>
+  © 2025 Agusfix.mg – Servicio técnico de celulares
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5491122951854" target="_blank">
+  WhatsApp
+</a>
 
 </body>
 </html>
